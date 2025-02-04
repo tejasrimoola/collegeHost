@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions | College Name</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* General Reset */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+nav a.active {
+            background-color: #f3f3ee; 
+            color: #000f0bf7;
+            font-weight: medium; 
+            border-radius: 5px;
+            padding: 10px;
+}
+nav a:hover {
+    background-color: #2c3e50;
+    border-radius: 5px;
+    text-decoration: none;
+}
+nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 5px;
+      transition: background-color 0.3s;
+        }
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+  }
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+  }
+/* Header Section */
+header {
+    background-color: #27727c;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  header nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #00509e, #ffcc00);
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #ffcc00;
+    color: #00509e;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #ffc107;
+    transform: scale(1.1);
+}
+
+/* Admissions Section */
+.admissions {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.admissions h3 {
+    font-size: 2.5rem;
+    color: #00509e;
+    margin-bottom: 40px;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.step {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 12px;
+    width: 250px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.step-number {
+    background-color: #00509e;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.step h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.step p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-form label {
+    font-weight: bold;
+}
+
+.login-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-btn {
+    background-color: #00509e;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.login-btn:hover {
+    background-color: #ffcc00;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .steps {
+        flex-direction: column;
+    }
+}
+
+</style>
+<body>
+
+
+    <!-- Header Section -->
+    <header>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="campuslife.html">Campus life</a></li>
+            <li><a href="admissions.html" class="active">Admissions</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Admissions Open 2024</h2>
+            <p>Join our vibrant community and build your future with us!</p>
+            <button id="register-btn" class="cta-button"><a href="register.html" style="text-decoration: none; font-weight: 250; font-size: larger;"> Register Now</a></button>
+        </div>
+    </section>
+
+    <!-- Admissions Details Section -->
+    <section class="admissions">
+        <div class="container">
+            <h3>Admissions Process</h3>
+            <div class="steps">
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <h4>Submit Your Application</h4>
+                    <p>Fill out the application form online with all required details.</p>
+                </div>
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <h4>Attend Counseling</h4>
+                    <p>Attend the counseling session to understand the programs we offer.</p>
+                </div>
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <h4>Confirm Admission</h4>
+                    <p>Complete the fee payment and secure your seat at College Name.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 College Name. All rights reserved.</p>
+    </footer>
+
+    <script src="admissions.js"></script>
+</body>
+</html>

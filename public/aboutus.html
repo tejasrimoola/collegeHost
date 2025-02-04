@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Guru Nanak</title>
+</head>
+<style>
+  /* General Reset */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+nav a.active {
+            background-color: #f3f3ee; 
+            color: #000f0bf7;
+            font-weight: medium; 
+            border-radius: 5px;
+            padding: 10px;
+        }
+        nav a:hover {
+            background-color: #2c3e50;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+header {
+    background-color:#27727c;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 10;
+  }
+  
+  header nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+  }
+  
+  
+
+/* Hero Section with Gradient */
+.hero {
+    /* background: linear-gradient(135deg, #ff6f61, #ffcc00); */
+    background: url('images/collegepic16.jpeg') no-repeat center center/cover;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:rgb(198, 53, 53);
+    padding: 20px;
+    /* text-decoration-color: #fff; */
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 50px;
+}
+
+.cta-button:hover {
+    background-color: #ff6f61;
+}
+
+/* About Us Section */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+    background-color: #fff;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h3 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Core Values Section */
+.core-values {
+    background-color: #f1f1f1;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.core-values h3 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.values {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.value-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin: 15px;
+}
+
+.value-card:hover {
+    transform: translateY(-10px);
+}
+
+.value-icon {
+    font-size: 3rem;
+    color: #ff6f61;
+    margin-bottom: 20px;
+}
+
+.value-card h4 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.value-card p {
+    font-size: 1rem;
+    color: #666;
+}
+nav a:hover {
+            background-color: #2c3e50;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+/* Footer Section */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .values {
+        flex-direction: column;
+    }
+
+    .value-card {
+        margin-bottom: 20px;
+        width: 80%;
+    }
+
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .cta-button {
+        font-size: 0.9rem;
+        padding: 10px 25px;
+    }
+}
+
+</style>
+<body>
+
+    <!-- Header Section -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html" class="active">About Us</a></li>
+          <li><a href="campuslife.html">Campus life</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section with Gradient Background -->
+    <section class="hero">
+        <div class="hero-content">
+            <!-- <h2>Discover Your Future with Us</h2>
+            <p>Where Education Meets Innovation</p> -->
+            <!-- <button class="cta-button">Join Us Today</button> -->
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about">
+        <div class="container">
+            <div class="about-text">
+                <h3>Welcome to Guru Nanak</h3>
+                <p>Our mission is to provide high-quality education, foster creativity, and develop leadership in our students. We believe in empowering our students to lead with integrity and innovation in an ever-changing world.</p>
+            </div>
+            <div class="about-image">
+                <img src="images/collegepic15.jpeg" alt="College Campus">
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values Section with Iconography -->
+    <section class="core-values">
+        <div class="container">
+            <h3>Our Core Values</h3>
+            <div class="values">
+                <div class="value-card">
+                    <div class="value-icon">&#9733;</div>
+                    <h4>Excellence</h4>
+                    <p>Striving for the highest standards in all that we do.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">&#9733;</div>
+                    <h4>Innovation</h4>
+                    <p>Fostering a culture of creativity and progress.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">&#9733;</div>
+                    <h4>Integrity</h4>
+                    <p>Building a foundation of trust and ethical leadership.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Guru Nanak Institutions. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

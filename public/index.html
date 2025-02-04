@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Portal - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        nav a.active {
+            background-color: #f3f3ee; 
+            color: #000f0bf7;
+            font-weight: bold; 
+            border-radius: 5px;
+        }
+
+
+        header {
+            background-color: white;
+            padding: 15px;
+            text-align: center;
+            color: #fff;
+            justify-content: center;
+        }
+
+        header img {
+            max-width: 100%;
+            height: auto;
+            border: 0;
+            display: block;
+            margin: 0 auto;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #27727c;
+            padding: 10px 0;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #2c3e50;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .container {
+            padding: 20px;
+            background-image: url(images/collegepic1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            text-align: right;
+            color: rgb(47, 35, 109);
+        }
+
+        .container h2 {
+            font-weight: bold;
+            font-size: 50px;
+        }
+
+        .container p {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .container {
+                padding: 15px;
+                background-size: contain; /* Adjust background size for smaller screens */
+            }
+
+            .container h2 {
+                font-size: 30px;
+            }
+
+            .container p {
+                font-size: 16px;
+            }
+
+            footer {
+                position: relative;
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container h2 {
+                font-size: 24px;
+            }
+
+            .container p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/collegepic2.webp" alt="College Image">
+    </header>
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="campuslife.html">Campus Life</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="academics.html">Academics</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <h2>Welcome to Our College</h2>
+        <p>Explore our programs, campus life, and more!</p>
+    </div>
+    <footer>
+        &copy; Guru Nanak Institions 2024 College Portal
+    </footer>
+</body>
+</html>

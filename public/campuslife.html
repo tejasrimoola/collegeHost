@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Life</title>
+  <!-- <link rel="stylesheet" href="campuslife.css"> -->
+</head>
+<style>
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #faf2f2;
+  }
+  nav a.active {
+            background-color: #f3f3ee; 
+            color: #000f0bf7;
+            font-weight: medium; 
+            border-radius: 5px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #2c3e50;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+  
+  header {
+    background-color: #27727c;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  header nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  
+  
+  .campus-life {
+    background-color: #fda4a4;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .campus-life .container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .campus-life h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .campus-life p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .activities, .facilities {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  
+  .activity-card, .facility-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 13px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .activity-card img, .facility-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .activity-card h3, .facility-card h3 {
+    font-size: 24px;
+    margin-top: 15px;
+  }
+  
+  .activity-card p, .facility-card p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+   
+</style>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="campuslife.html" class="active">Campus life</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="campus-life">
+    <div class="container">
+      <h1>Campus Life at GNITC</h1>
+      <p>At GNITC, campus life goes beyond academics. We offer a vibrant, inclusive, and diverse environment that helps students grow intellectually, socially, and personally. Whether you're interested in sports, arts, or community service, there's something for everyone!</p>
+      
+      <div class="activities">
+        <div class="activity-card">
+          <img src="images/collegepic3.jpg" alt="Sports Activities">
+          <h3>Sports</h3>
+          <p>Join a variety of sports clubs and participate in friendly competitions, fitness classes, and outdoor adventures.</p>
+        </div>
+        
+        <div class="activity-card">
+          <img src="images/collegepic4.png" alt="Clubs and Societies">
+          <h3>Clubs & Societies</h3>
+          <p>Get involved with academic clubs, cultural societies, or social causes to meet new people and develop your passions.</p>
+        </div>
+
+        <div class="activity-card">
+          <img src="images/collegepic5.webp" alt="Events and Festivals">
+          <h3>Events & Festivals</h3>
+          <p>Experience a variety of events throughout the year including concerts, festivals, and cultural showcases.</p>
+        </div>
+      </div>
+      
+      <h2>Our Campus Facilities</h2>
+      <p>Our campus is equipped with modern amenities that support academic learning and extracurricular activities. Explore our state-of-the-art sports facilities, libraries, student lounges, and more!</p>
+
+      <div class="facilities">
+        <div class="facility-card">
+          <img src="images/collegepic6.jpg" alt="library">
+          <h3>Library</h3>
+          <p>Our well-stocked library provides a quiet environment for study and research.</p>
+        </div>
+        
+        <div class="facility-card">
+          <img src="images/collegepic7.jpg" alt="Events and Festivals">
+          <h3>Sports Complex</h3>
+          <p>Enjoy a range of sports facilities including courts, fields, and a gymnasium.</p>
+        </div>
+        
+        <div class="facility-card">
+          <img src="images/collegepic8.webp" alt="Events and Festivals">
+          <h3>Student Lounge</h3>
+          <p>Relax and socialize with friends in our comfortable student lounge spaces.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Guru Nanak Institutions. All rights reserved.</p>
+  </footer>
+</body>
+</html>
